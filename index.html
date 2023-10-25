@@ -12,11 +12,15 @@
 
         <h2 class="regularSubHeading"> Pet names </h2>
         <p id="pets" class="regularText"> no content </p>
-        <button onclick="RequestPets()"> Get Pets</button>
+        <button onclick="RequestPets()"> Get Pets </button>
 
         <h2 class="regularSubHeading"> Pet info </h2>
         <p id="pet" class="regularText"> no content </p>
-        <button onclick="RequestPets()"> Get Pet info</button>
+        <form id="frm1">
+            <p> Pet name: <label>   <input type="text" name="fname"/>            </label></p>
+
+            <input type="button" onclick="RequestPetInfo(fname.value)" value="Submit">
+        </form>
     </div>
 </body>
 </html>

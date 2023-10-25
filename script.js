@@ -11,7 +11,7 @@
             // Handle the API response data here
             console.log("here")
             console.log(data)
-            document.getElementById("pets").innerHTML = data
+            document.getElementById("pets").innerHTML = JSON.stringify(data)
             // You can also perform any other actions or state updates based on the response
         })
 
@@ -23,9 +23,10 @@
         });
 }
 
- const RequestPetInfo =  () =>{
+ const RequestPetInfo =  ( petName ) =>{
 
-     const url = `http://localhost:8000/`;
+
+     const url = `http://localhost:8000/${petName}`;
 
      fetch(url, {
          method: 'GET', // Change the method if needed (e.g., POST),
@@ -35,7 +36,7 @@
              // Handle the API response data here
              console.log("here")
              console.log(data)
-             document.getElementById("pets").innerHTML = data
+             document.getElementById("pet").innerHTML = JSON.stringify(data)
              // You can also perform any other actions or state updates based on the response
          })
 
