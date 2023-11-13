@@ -1,7 +1,80 @@
-.root{
+* {
+    margin: 0;
+    padding: 0;
+}
+.root,.container{
     background-color: #2f3542;
+}
+.bodyContainer{
+    padding: 1rem;
 }
 .regularHeading, .regularText, .regularSubHeading{
     color: white;
 }
+#pets{
+    display: flex;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+.regularHeading{
+    font-family: "dazzle-unicase", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.headerContainer{
+    background-color: #41445b;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
 
+.subtitleHeading{
+    font-family: "serenity", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+}
+.svg-fill-primary{
+    fill: white;
+}
+.petServerController{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    height: auto;
+    background-color: #1a1e26;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.petServerContainer{
+    padding: 1rem;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+
+}
+input{
+    background-color: #1a1e26;
+    border-style: solid;
+    border-color: #2f3542;
+    padding: 3px;
+    color: white;
+}
+
+p{
+    margin-top: 7px;
+    color: #6c6c6c;
+}
+.submitbutton{
+    margin-top: 1rem;
+    width: 100%;
+}
+.petInfoContainer{
+    background-color: #161a1f;
+    height: auto;
+}
+h2{
+    color: white;
+}
